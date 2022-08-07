@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/07 18:28:42 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/07 18:34:59 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ RESET			:=	\033[38;5;7m
 PREFIX			=	[${YELLOW}${NAME}${RESET}]\t\t
 
 # Variables
-NAME			=	
+NAME			=	ft_mlx
 LIBFT_FOLDER	=	Libft/
 LIBFT_NAME		=	libft.a
 MAKE_LIBFT		=	@make -s -C ${LIBFT_FOLDER}
