@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pixel_put.c                                     :+:      :+:    :+:   */
+/*   ft_xpm_file_to_image.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/02 15:33:45 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/02 16:17:43 by mykman           ###   ########.fr       */
+/*   Created: 2022/08/07 22:15:17 by mykman            #+#    #+#             */
+/*   Updated: 2022/08/07 22:20:01 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_mlx.h"
 
-void	ft_pixel_put(t_img img, t_point pos, unsigned int color)
+t_img	ft_xpm_file_to_image(void *mlx_ptr, char *filename)
 {
-	char	*dst;
+	t_img	img;
 
-	dst = img.addr + (pos.y * img.line_length + pos.x * (img.bpp / 8));
-	*(unsigned int *)dst = color;
+	ft_bzero(&img, sizeof(img));
+	img.img = mlx_xpm_file_to_image(mlx_ptr, filename, &img.size.x, &img.size.y);
+	if (!img.img)
+		return (img);
+	img.addr = mlx_get_data_addr(img.img, &img.bpp, &img.line_length,
+		&img.endian);
+	return (img);
 }

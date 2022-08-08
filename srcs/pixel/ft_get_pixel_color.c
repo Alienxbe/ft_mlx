@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_new_image.c                                     :+:      :+:    :+:   */
+/*   ft_get_pixel_color.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/02 16:08:32 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/02 16:29:24 by mykman           ###   ########.fr       */
+/*   Created: 2022/08/02 16:36:59 by mykman            #+#    #+#             */
+/*   Updated: 2022/08/07 23:07:30 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_mlx.h"
 
-t_img	ft_new_image(void *mlx_ptr, t_point size)
+t_color	ft_get_pixel_color(t_img img, t_point pos)
 {
-	t_img	img;
+	char	*dst;
 
-	ft_bzero(&img, sizeof(img));
-	img.img = mlx_new_image(mlx_ptr, size.x, size.y);
-	if (!img.img)
-		return (img);
-	img.addr = mlx_get_data_addr(img.img, &img.bpp, &img.line_length,
-		&img.endian);
-	img.size = size;
-	return (img);
+	dst = img.addr + (pos.y * img.line_length + pos.x * (img.bpp / 8));
+	return (*(t_color *)dst);
 }
-
