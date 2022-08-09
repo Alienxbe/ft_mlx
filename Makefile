@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/08 16:06:12 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/09 02:36:27 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,16 +48,20 @@ MAKE_MLX		=	@make -s -C ${MLX_FOLDER}
 # Files
 INCLUDES		:=	-I./includes \
 					-I./${LIBFT_FOLDER}/includes/general_functions \
-					-I./${MLX_FOLDER} \
-					-I./${LIBFT_FOLDER}/includes/ft_printf
-LIBRARIES		:=	-L./Libft/ -lft \
-					-L./minilibx_Darwin -lmlx \
+					-I./${LIBFT_FOLDER}/includes/ft_printf \
+					-I./${MLX_FOLDER}
+LIBRARIES		:=	-L./${LIBFT_FOLDER}/ -lft \
+					-L./${MLX_FOLDER} -lmlx \
 					-L./ -lftmlx
-SRCS_IMAGE		:=	ft_new_image.c \
+SRCS_IMAGE		:=	ft_cpy_image.c \
+					ft_new_image.c \
 					ft_new_subimage.c \
 					ft_xpm_file_to_image.c
 SRCS_PIXEL		:=	ft_get_pixel_color.c \
+					ft_pixel_area_cpy.c \
+					ft_pixel_cpy.c \
 					ft_pixel_fill.c \
+					ft_pixel_iter.c \
 					ft_pixel_put.c \
 					ft_pixel_replace_color.c
 OBJS_IMAGE		:=	$(addprefix srcs/image/, ${SRCS_IMAGE:.c=.o})

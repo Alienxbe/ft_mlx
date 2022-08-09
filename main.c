@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 15:30:40 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/07 23:10:12 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:27:28 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,10 @@ int main(void)
 
 	ft_pixel_put(win_img, (t_point){400, 400}, 0x00FF0000);
 	ft_pixel_put(win_img, (t_point){464, 464}, 0x00FF0000);
+
+	// ft_pixel_cpy(sprite, (t_point){0}, win_img, (t_point){150, 100});
+
+	ft_pixel_area_cpy(sprite, (t_area){{0, 0}, {64, 64}}, win_img, (t_point){400, 0});
 
 	mlx_put_image_to_window(mlx_ptr, mlx_win, win_img.img, 0, 0);
 	mlx_loop(mlx_ptr);

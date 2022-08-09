@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:23:57 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/07 22:57:02 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:41:24 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@ t_img	ft_new_subimage(void *mlx_ptr, t_img img, t_area area)
 {
 	t_img	new;
 	t_point	size;
-	t_point	i;
 
-	size = sub_point(area.p2, area.p1);
+	size = area_to_size(area);
 	if (size.x < 0 || size.y < 0
 		|| area.p1.x < 0 || area.p1.y < 0
 		|| area.p2.x > img.size.x || area.p2.y > img.size.y)
@@ -26,13 +25,6 @@ t_img	ft_new_subimage(void *mlx_ptr, t_img img, t_area area)
 	new = ft_new_image(mlx_ptr, size, 0);
 	if (!new.img)
 		return (new);
-	i.y = -1;
-	while (++i.y < size.y)
-	{
-		i.x = -1;
-		while (++i.x < size.x)
-			ft_pixel_put(new, i, \
-				ft_get_pixel_color(img, add_point(area.p1, i)));
-	}
+	ft_pixel_area_cpy(img, area, new, (t_point){0});
 	return (new);
 }

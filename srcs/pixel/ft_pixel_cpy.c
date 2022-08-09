@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_pixel_color.c                               :+:      :+:    :+:   */
+/*   ft_pixel_cpy.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/02 16:36:59 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 00:34:22 by mykman           ###   ########.fr       */
+/*   Created: 2022/08/08 22:51:54 by mykman            #+#    #+#             */
+/*   Updated: 2022/08/09 02:05:29 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_mlx.h"
 
-t_color	ft_get_pixel_color(t_img img, t_point pos)
+t_bool	ft_pixel_cpy(t_img src, t_point p_src, t_img dst, t_point p_dst)
 {
-	char	*dst;
-
-	if (!issmaller_point(pos, img.size))
-		return ((t_color)0x0);
-	dst = img.addr + (pos.y * img.line_length + pos.x * (img.bpp / 8));
-	return (*(t_color *)dst);
+	if (!issmaller_point(p_src, src.size) || !issmaller_point(p_dst, dst.size))
+		return (false);
+	return (ft_pixel_put(dst, p_dst, ft_get_pixel_color(src, p_src)));
 }
