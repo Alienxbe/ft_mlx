@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/09 02:36:27 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/09 02:48:11 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,13 +29,13 @@ endif
 # Colors
 RED				:=	\033[38;5;9m
 GREEN			:=	\033[38;5;10m
-BLUE			:= 	\033[38;5;14m
+BLUE			:=	\033[38;5;14m
 YELLOW			:=	\033[38;5;226m
 RESET			:=	\033[38;5;7m
 PREFIX			=	[${YELLOW}${FT}${RESET}]\t
 
 # Variables
-FT				:=	libftmlx
+FT				:=	libft_mlx
 NAME			=	${FT}.a
 MAIN			:=	test
 LIBFT_FOLDER	=	Libft/
@@ -52,7 +52,7 @@ INCLUDES		:=	-I./includes \
 					-I./${MLX_FOLDER}
 LIBRARIES		:=	-L./${LIBFT_FOLDER}/ -lft \
 					-L./${MLX_FOLDER} -lmlx \
-					-L./ -lftmlx
+					-L./ -lft_mlx
 SRCS_IMAGE		:=	ft_cpy_image.c \
 					ft_new_image.c \
 					ft_new_subimage.c \

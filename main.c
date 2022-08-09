@@ -6,12 +6,12 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 15:30:40 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:27:28 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:45:51 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "ft_mlx.h"
+#include "libft_mlx.h"
 
 int main(void)
 {

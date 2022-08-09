@@ -6,11 +6,11 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 15:33:45 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 00:36:54 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:46:51 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mlx.h"
+#include "libft_mlx.h"
 
 t_bool	ft_pixel_put(t_img img, t_point pos, t_color color)
 {

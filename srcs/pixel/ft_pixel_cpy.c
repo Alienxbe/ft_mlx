@@ -6,11 +6,11 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 22:51:54 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:05:29 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:46:54 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mlx.h"
+#include "libft_mlx.h"
 
 t_bool	ft_pixel_cpy(t_img src, t_point p_src, t_img dst, t_point p_dst)
 {

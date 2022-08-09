@@ -6,11 +6,11 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:23:57 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:41:24 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:46:57 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mlx.h"
+#include "libft_mlx.h"
 
 t_img	ft_new_subimage(void *mlx_ptr, t_img img, t_area area)
 {

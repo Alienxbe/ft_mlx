@@ -6,11 +6,11 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:36:59 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 00:34:22 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:46:55 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mlx.h"
+#include "libft_mlx.h"
 
 t_color	ft_get_pixel_color(t_img img, t_point pos)
 {
