@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 23:01:10 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:46:48 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:53:49 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_bool	ft_pixel_replace_color(t_img img, t_color old, t_color new)
 	{
 		i.x = -1;
 		while (++i.x < img.size.x)
-			if (ft_get_pixel_color(img, i) == old)
+			if (ft_pixel_get_color(img, i) == old)
 				if (ft_pixel_put(img, i, new))
 					ret = false;
 	}

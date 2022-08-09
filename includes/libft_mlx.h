@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:26:06 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:45:32 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:52:00 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ t_img	ft_xpm_file_to_image(void *mlx_ptr, char *filename);
 t_bool	ft_pixel_put(t_img img, t_point pos, t_color color);
 t_bool	ft_pixel_fill(t_img img, t_area area, t_color color);
 t_bool	ft_pixel_replace_color(t_img img, t_color old, t_color new);
-t_bool	ft_pixel_iter(t_img img, t_bool (*f)(t_img, t_point));
 t_bool	ft_pixel_cpy(t_img src, t_point p_src, t_img dst, t_point p_dst);
 t_bool	ft_pixel_area_cpy(t_img src, t_area a_src, t_img dst, t_point p_dst);
-t_color	ft_get_pixel_color(t_img img, t_point pos);
+t_bool	ft_pixel_iter(t_img img, t_bool (*f)(t_img, t_point));
+t_color	ft_pixel_get_color(t_img img, t_point pos);
 
 #endif

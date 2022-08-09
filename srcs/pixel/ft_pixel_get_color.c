@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_pixel_color.c                               :+:      :+:    :+:   */
+/*   ft_pixel_get_color.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:36:59 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:46:55 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/09 02:51:35 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_mlx.h"
 
-t_color	ft_get_pixel_color(t_img img, t_point pos)
+t_color	ft_pixel_get_color(t_img img, t_point pos)
 {
 	char	*dst;
 

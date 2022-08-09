@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/09 02:48:11 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/09 02:52:47 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,10 +57,10 @@ SRCS_IMAGE		:=	ft_cpy_image.c \
 					ft_new_image.c \
 					ft_new_subimage.c \
 					ft_xpm_file_to_image.c
-SRCS_PIXEL		:=	ft_get_pixel_color.c \
-					ft_pixel_area_cpy.c \
+SRCS_PIXEL		:=	ft_pixel_area_cpy.c \
 					ft_pixel_cpy.c \
 					ft_pixel_fill.c \
+					ft_pixel_get_color.c \
 					ft_pixel_iter.c \
 					ft_pixel_put.c \
 					ft_pixel_replace_color.c
