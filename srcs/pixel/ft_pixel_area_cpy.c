@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 02:16:42 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:46:55 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 07:27:50 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ t_bool	ft_pixel_area_cpy(t_img src, t_area a_src, t_img dst, t_point p_dst)
 		i.x = -1;
 		while (++i.x < size.x)
 			if (!ft_pixel_cpy(src, add_point(a_src.p1, i), dst,
-				add_point(p_dst, i)))
+					add_point(p_dst, i)))
 				ret = false;
 	}
 	return (ret);
