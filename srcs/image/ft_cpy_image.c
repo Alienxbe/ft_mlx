@@ -6,13 +6,11 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 16:26:19 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:46:59 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 06:00:47 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_mlx.h"
-
-// Should implement t_bool type in libft !!
 
 /*
 * Copy the area from src to dst_p on dst

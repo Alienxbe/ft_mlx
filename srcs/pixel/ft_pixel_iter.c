@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 01:52:37 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:46:52 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 06:03:18 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_bool	ft_pixel_iter(t_img img, t_bool (*f)(t_img, t_point))
 	{
 		i.x = -1;
 		while (++i.x < img.size.x)
-			if (f(img, i))
+			if (!f(img, i))
 				ret = false;
 	}
 	return (ret);

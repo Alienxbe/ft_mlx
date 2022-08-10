@@ -6,18 +6,16 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:26:06 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 03:00:35 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 05:59:54 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_MLX_H
 # define FT_MLX_H
 
-# include "mlx.h"
-# include "ft_memory.h"
 # include "ft_bool.h"
-# include "ft_point.h"
 # include "ft_area.h"
+# include "ft_point.h"
 
 typedef struct s_img
 {

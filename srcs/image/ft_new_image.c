@@ -6,10 +6,12 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:08:32 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/09 02:46:58 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 06:04:02 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_mlx.h"
+#include "ft_memory.h"
 #include "libft_mlx.h"
 
 t_img	ft_new_image(void *mlx_ptr, t_point size, t_color bg)
