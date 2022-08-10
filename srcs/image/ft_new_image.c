@@ -6,11 +6,11 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:08:32 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/10 06:04:02 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 06:08:14 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mlx.h"
+#include "mlx.h"
 #include "ft_memory.h"
 #include "libft_mlx.h"
 
