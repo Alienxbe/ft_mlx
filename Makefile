@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/10 04:05:59 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/10 04:24:50 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,8 +39,7 @@ LIBFT_PATH			:=	${MLX_FOLDER}/${MLX_NAME}
 
 # Files
 INCLUDES			:=	-I./includes \
-						-I./${LIBFT_FOLDER}/includes/general_functions \
-						-I./${LIBFT_FOLDER}/includes/ft_printf \
+						-I./${LIBFT_FOLDER}/includes \
 						-I./${MLX_FOLDER}
 LIBRARIES			:=	-L./${LIBFT_FOLDER} -lft \
 						-L./${MLX_FOLDER} -lmlx \
