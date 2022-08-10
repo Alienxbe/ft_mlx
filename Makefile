@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/10 03:54:01 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/10 04:05:59 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,12 +32,10 @@ OBJS_PATH			:=	objs
 LIBFT_FOLDER		:=	Libft
 LIBFT_NAME			:=	libft.a
 LIBFT_PATH			:=	${LIBFT_FOLDER}/${LIBFT_NAME}
-MAKE_LIBFT			:=	@make -s -C ${LIBFT_FOLDER}
 
 MLX_FOLDER			:=	minilibx_${detected_OS}
 MLX_NAME			:=	libmlx.a
 LIBFT_PATH			:=	${MLX_FOLDER}/${MLX_NAME}
-MAKE_MLX			:=	@make -s -C ${MLX_FOLDER}
 
 # Files
 INCLUDES			:=	-I./includes \
@@ -69,8 +67,6 @@ ${OBJS_PATH}/%.o:	${SRCS_PATH}/%.c
 	@echo "${PREFIX}Compilation of $<..."
 
 $(NAME):			${OBJS}
-	${MAKE_LIBFT}
-	${MAKE_MLX}
 	@ar -rcs $@ $^
 
 all:				$(NAME)
