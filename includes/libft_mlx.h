@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:26:06 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/10 06:20:29 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 06:42:11 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,10 @@ typedef struct s_img
 
 typedef struct s_window
 {
-	void	*win_ptr;
-	t_point	size;
+	void		*win_ptr;
+	t_point		size;
+	const char	*name;
+	t_img		img;
 }	t_window;
 
 typedef unsigned int	t_color;
