@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:26:06 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/10 06:42:11 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/10 07:10:21 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ typedef unsigned int	t_color;
 t_window	ft_new_window(void *mlx_ptr, t_point size, char *name, int (*f)());
 t_bool		ft_put_image_to_window(void *mlx_ptr, t_window window, t_img img,
 				t_point pos);
+void		ft_update_window(void *mlx_ptr, t_window window);
 
 /*
 ** Images

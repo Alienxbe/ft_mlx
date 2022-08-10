@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/10 06:27:49 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/10 07:11:09 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,8 @@ SRCS_PIXEL			:=	ft_pixel_area_cpy.c \
 						ft_pixel_put.c \
 						ft_pixel_replace_color.c
 SRCS_WINDOW			:=	ft_new_window.c \
-						ft_put_image_to_window.c
+						ft_put_image_to_window.c \
+						ft_update_window.c
 SRCS				:=	$(addprefix ${SRCS_PATH}/image/, ${SRCS_IMAGE})
 SRCS				+=	$(addprefix ${SRCS_PATH}/pixel/, ${SRCS_PIXEL})
 SRCS				+=	$(addprefix ${SRCS_PATH}/window/, ${SRCS_WINDOW})
