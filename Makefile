@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/12 04:16:45 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/12 06:53:21 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,8 @@ SRCS_PIXEL			:=	ft_pixel_area_cpy.c \
 						ft_pixel_iter.c \
 						ft_pixel_put.c \
 						ft_pixel_replace_color.c
-SRCS_SCENE			:=	ft_scene.c
+SRCS_SCENE			:=	ft_scene.c \
+						ft_scene_setbg.c
 SRCS_WINDOW			:=	ft_new_window.c \
 						ft_put_image_to_window.c \
 						ft_update_window.c
