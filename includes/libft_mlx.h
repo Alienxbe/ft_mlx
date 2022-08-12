@@ -6,7 +6,7 @@
 /*   By: mykman <mykman@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:26:06 by mykman            #+#    #+#             */
-/*   Updated: 2022/08/10 07:10:21 by mykman           ###   ########.fr       */
+/*   Updated: 2022/08/12 02:00:51 by mykman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void		ft_update_window(void *mlx_ptr, t_window window);
 t_img		ft_new_image(void *mlx_ptr, t_point size, t_color bg);
 t_img		ft_new_subimage(void *mlx_ptr, t_img img, t_area area);
 t_img		ft_xpm_file_to_image(void *mlx_ptr, char *filename);
+t_bool		ft_cpy_image(t_img src, t_img dst, t_point p_dst);
 
 /*
 ** Pixel
