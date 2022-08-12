@@ -6,7 +6,7 @@
 #    By: mykman <mykman@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/08 00:02:10 by mykman            #+#    #+#              #
-#    Updated: 2022/08/12 04:16:45 by mykman           ###   ########.fr        #
+#    Updated: 2022/08/12 04:29:33 by mykman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,12 +38,12 @@ MLX_NAME			:=	libmlx.a
 LIBFT_PATH			:=	${MLX_FOLDER}/${MLX_NAME}
 
 # Files
-INCLUDES			:=	-I./includes \
-						-I./${LIBFT_FOLDER}/includes \
-						-I./${MLX_FOLDER}
-LIBRARIES			:=	-L./${LIBFT_FOLDER} -lft \
-						-L./${MLX_FOLDER} -lmlx \
-						-L./${LIBFT_MLX_FOLDER} -lft_mlx
+INCLUDES			:=	-I ./includes \
+						-I ${LIBFT_FOLDER}/includes \
+						-I ${MLX_FOLDER}
+LIBRARIES			:=	-L ${LIBFT_FOLDER} -lft \
+						-L ${MLX_FOLDER} -lmlx \
+						-L ${LIBFT_MLX_FOLDER} -lft_mlx
 
 SRCS_IMAGE			:=	ft_cpy_image.c \
 						ft_new_image.c \
